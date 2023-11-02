@@ -1,0 +1,30 @@
+.all {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.hako {
+    position: relative;
+    display: block;
+}
+
+.hako img {
+    width: 100%;
+    display: block;
+}
+
+.hakodate {
+    position: absolute;
+    width: 1350px;
+    bottom: 1px;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgba(105, 230, 255, 0.5);
+    padding: 12.8%;
+    text-align: left;
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bolder;
+    color: red;
+    font-family: YuMincho;
+}

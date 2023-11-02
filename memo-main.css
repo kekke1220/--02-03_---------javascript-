@@ -1,0 +1,125 @@
+.all {
+    max-width: 1350px;
+    margin: 0 auto;
+    background-image: url(https://genkosha.pictures/wp-content/uploads/2019/07/0513.jpg);
+}
+
+body{
+    margin:0;
+    padding:0;
+    text-align:left;
+    font-size: 32px;
+}
+
+header{
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+main{
+    border-bottom:1px solid #ccc;
+    position:relative;
+}
+
+footer{
+    background-color: #fff;
+    border-bottom:1px solid #ccc;
+    text-align: center;
+}
+
+p{
+    font-size:200%;
+    text-align: center;
+    border-bottom:1px solid #fff;
+    height:200px;
+}
+
+ul{
+    padding: 0;
+    border-top: 1px solid #000000;
+    display:table;  /* 定義 */
+    table-layout: fixed;
+    width:100%;
+}
+
+li{
+    list-style-type:none;
+    border: 1px solid #666;
+    background-color: #FFF;
+    display:table-cell;  /* 定義 */
+    cursor: pointer;
+}
+
+li:hover{
+    background: #0066CC;
+    color:#fff;
+}
+
+textarea{
+    margin: 2%;
+    width: 95%;
+    height: 230px;
+    font-size:80%;
+    box-shadow: 3px 3px 3px 3px #555;
+  }
+
+#save {
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 300px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #27acd9 0%, #b4e12b 100%);
+	border-radius: 100vh;
+	color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: 0.5s;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#clear {
+    display: block;
+	text-align: center;
+	text-decoration: none;
+	width: 300px;
+	margin: auto;
+	padding: 1rem 4rem;
+	font-weight: bold;
+	background-image: linear-gradient(to right, #27acd9 0%, #b4e12b 100%);
+	border-radius: 100vh;
+	color: #fff;
+	border: 2px solid #fff;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	-webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .2);
+	transition: 0.5s;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+#text_area1 {
+    background-color: darkblue;
+    color: white;
+    opacity: 0.5;
+}
+
+#text_area2 {
+    background-color: darkblue;
+    color: white;
+    opacity: 0.5;
+}
+
+.top {
+    font-size: 80px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-top: 30px;
+    color: white;
+    padding-top: 20px;
+    font-family:'筑紫B丸ゴシック';
+}

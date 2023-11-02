@@ -1,0 +1,90 @@
+.all {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.head {
+    display: flex;
+   margin-left: 250px;
+}
+
+.midashi {
+    font-size: 50px;
+    text-align: center;
+    margin: 25px;
+    font-weight: bold;
+    font-family: serif;
+}
+
+.midashi1 {
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+}
+
+.midashi2 {
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+}
+
+.midashi3 {
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+}
+
+.midashi4 {
+    font-size: 25px;
+    text-align: center;
+    font-family: serif;
+}
+
+.chusen {
+    position: relative;
+}
+
+.chusen img {
+    opacity: 50%;
+}
+
+#txt {
+    position: absolute;
+    width: 1350px;
+    bottom: 400px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+#txt1 {
+    position: absolute;
+    width: 1350px;
+    bottom: 350px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    font-family: serif;
+}
+
+#stbtn {
+    position: absolute;
+    display: flex;
+    left:600px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: serif;
+    top: 950px;
+}
+
+#echo {
+    position: absolute;
+    display: flex;
+    left: 430px;
+    font-size: 70px;
+    top: 730px;
+    bottom: 1px;
+    font-weight: bold;
+    font-family: serif;
+}

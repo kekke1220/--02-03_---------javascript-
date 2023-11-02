@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="memo-sub.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="all">
+
+        <div class="top">Leave memories</div>
+ 
+         <main style="display:none;">
+             <textarea id="text_area"></textarea>
+             <textarea id="text_area3"></textarea>
+             <button id="save">保存</button>
+             <button id="clear">消去</button>
+         </main>
+     
+         <footer><small>hokkaido tourist site</small></footer>
+ 
+     </div>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+         <script>
+             $("main").fadeIn(1000);
+             //↑slideDownだと上から降ってくる！
+     
+             //1.Save クリックイベント
+     
+             $("#save").on("click",function(){
+                 const v = $("#text_area").val();
+                 localStorage.setItem("memo",v);
+                 alert("保存しました")
+             });
+     
+     
+     
+             //2.clear クリックイベント
+     
+             $("#clear").on("click",function(){
+                 localStorage.removeItem("memo");
+                 alert("削除しました")
+                 $("#text_area").val("");
+             });
+     
+     
+     
+             //3.ページ読み込み：保存データ取得表示
+     
+             if(localStorage.getItem("memo")){
+                 const v = localStorage.getItem("memo");
+                 $("#text_area").val(v);
+             }
+
+             //1.Save クリックイベント
+     
+             $("#save").on("click",function(){
+                 const v = $("#text_area3").val();
+                 localStorage.setItem("memo3",v);
+                 alert("保存しました")
+             });
+     
+     
+     
+             //2.clear クリックイベント
+     
+             $("#clear").on("click",function(){
+                 localStorage.removeItem("memo3");
+                 alert("削除しました")
+                 $("#text_area3").val("");
+             });
+     
+     
+     
+             //3.ページ読み込み：保存データ取得表示
+     
+             if(localStorage.getItem("memo")){
+                 const v = localStorage.getItem("memo3");
+                 $("#text_area3").val(v);
+             }
+     
+     
+     
+     
+     
+             //ロード時に表示
+             //※こんなこともできる例
+         </script>
+    
+</body>
+</html>

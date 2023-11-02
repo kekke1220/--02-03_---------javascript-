@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css1/sapporo-otaru.css">
+</head>
+<body>
+    
+    <div class="all">
+       <div class="satsu">
+        <img src="https://skyticket.jp/guide/wp-content/uploads/s_pixta_44329563_M-e1557285312265.jpg" alt="札幌" width="1350px" height="500px">
+        <button class="sapporo">札幌</button>
+       </div>
+       
+       <div class="ota">
+        <img src="https://otaru.gr.jp/wp-content/themes/otaru/img/top/slider/6/2.jpg" alt="小樽" width="1350px" height="500px">
+        <button class="otaru">小樽</button>
+       </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script> 
+    $(".sapporo").on("click",function(){
+    location.href="https://www.sapporo.travel/"
+    });
+
+    $(".otaru").on("click",function(){
+    location.href="https://otaru.gr.jp/"
+    });
+
+
+    </script>
+
+</body>
+</html>

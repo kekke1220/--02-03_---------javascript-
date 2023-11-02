@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/hokkaido.css">
+</head>
+<body>
+
+<div class="all">
+
+    <p class="top-img"><img src="https://marriott.cdn.tambourine.com/fairfield-japan/media/fairfieldjapan-hokkaido-header-2-62868fdc98298.jpeg" alt="富良野" width="1350px" height="200px"></p>
+
+    <p class="top-img-title">北海道LOVE 旅行応援特設サイト</p>
+
+    
+        <nav>
+         <ul id="TOP1">
+          <li class="TOPP"><a href="#TOP1">トップ</a></li>
+          <li class="TOPP"><a href="#photo-text">観光マップ</a></li>
+          <li class="TOPP"><a href="#cam">キャンペーン</a></li>
+          <li class="TOPP"><a href="#gazou">旅メモ</a></li>
+          <li class="TOPP"><a href="#gazou1">Q&A</a></li>
+          <li class="TOPP"><a href="#gazou2">栄養素占い</a></li>
+         </ul>
+        </nav> 
+
+    <div id="tenki-all">
+     <p class="title">Hokkaido tourists site</p>
+     <p class="title2">そうだ、北海道を旅しよう。</p>
+     <p class="title3">早く行かなきゃ。</p>
+
+
+      <div id="photo-text">
+       <p class="img"><img src="https://www.visit-hokkaido.jp/basic/images/areaMap.svg" alt="衛星写真"></p>
+
+       <button class="wakka-sohya">稚内・宗谷岬</button>
+       <button class="sire-aba">知床・網走</button>
+       <button class="fura-biei-asa">富良野・美瑛・旭川</button>
+       <button class="kushi-akan">釧路・阿寒湖</button>
+       <button class="satsu-ota">札幌・小樽</button>
+       <button class="toka-obi">十勝・帯広</button>
+       <button class="nobo-tohya">登別・洞爺</button>
+       <button class="hako">函館</button>
+      </div>
+
+      <div id="cam">
+       <img src="https://mediaim.expedia.com/destination/1/77bf7e612b890e2e943c6d43a9b9fda4.jpg" alt="定山渓" width="1350px" height="500px">
+       <button class="cam-btn">北海道観光キャンペーン開催中!👇Click here👇</button>
+      </div>
+
+      <div id="gazou"><img src="https://1.bp.blogspot.com/-l79YokbKR-o/Ut7O_Q0Z8kI/AAAAAAAAG5M/WTK8DZkAbz8/s2560/night-view-wallpaper-2912624792_75255d7d53_o.jpg" alt="gazou" width="1350px" height="800px"></div>
+
+      <div id="title4">旅を文字に。</div>
+      <div id="title5">予定や思い出を記そう</div>
+    
+      <button id="btn01">予定を立てよう！</button>
+      <button id="btn02">思い出を残そう！</button>
+
+      <div id="gazou1"><img src="https://news.microsoft.com/wp-content/uploads/prod/sites/47/2020/01/200131_Ai_05.jpg" alt="gazou" width="1350px" height="800px"></div>
+
+      <div class="top">
+        <div class="title7">Q&A</div>
+      </div>
+
+      <div id="sub">気になったことはロボットくんに質問！</div>
+      
+      <div id="chat"></div> 
+  
+      <p class="txt-send">
+       <input type="text" id="input">
+       <button id="send">送信</button>
+      </p>
+
+    </div>
+
+    <div id="gazou2"><img src="https://user0514.cdnw.net/shared/img/thumb/aig-ai230706093-xl_TP_V.jpg" alt="uranai" width="1350px" height="800px"></div>
+
+    <div id="uranai">栄養素占い</div>
+
+    <div class="que">今日一番欲している栄養素は？</div>
+
+    <label class="selectbox-1">
+        <button id="va">ビタミンA</button>
+        <button id="zn">亜鉛</button>
+        <button id="fe">鉄</button>
+        <button id="maka">マカ</button>
+    </label>
+
+    <div id="result"></div>
+
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+
+//観光マップ
+
+$(".wakka-sohya").on("click",function(){
+    location.href="http://127.0.0.1:5500/wakkanai-sohyamisaki.html"
+});
+
+$(".sire-aba").on("click",function(){
+    location.href="http://127.0.0.1:5500/shiretoko-abashiri.html"
+});
+
+$(".fura-biei-asa").on("click",function(){
+    location.href="http://127.0.0.1:5500/furano-biei-asahikawa.html"
+});
+
+$(".kushi-akan").on("click",function(){
+    location.href="http://127.0.0.1:5500/kushiro-akanko.html"
+});
+
+$(".satsu-ota").on("click",function(){
+    location.href="http://127.0.0.1:5500/sapporo-otaru.html"
+});
+
+$(".toka-obi").on("click",function(){
+    location.href="http://127.0.0.1:5500/tokachi-obihiro.html"
+});
+
+$(".nobo-tohya").on("click",function(){
+    location.href="http://127.0.0.1:5500/noboribetsu-tohya.html"
+});
+
+$(".hako").on("click",function(){
+    location.href="http://127.0.0.1:5500/hakodate.html"
+});
+
+//北海道キャンペーン
+
+$("#cam").on("click",function(){
+    location.href="http://127.0.0.1:5500/slot.html"
+});
+
+//メモページ遷移
+
+$("#btn01").on("click",function(){
+        location.href="http://127.0.0.1:5500/memo-main.html";
+       });
+
+       $("#btn02").on("click",function(){
+        location.href="http://127.0.0.1:5500/memo-sub.html";
+       });
+
+//チャットページ
+    const chat = $("#chat").get(0);
+    const input = $("#input").get(0);
+    const send = $("#send").get(0);
+
+// あらかじめ定義された返答
+    const replies = {
+      "こんにちは": "こんにちは！",
+      "おはよう": "おはようございます！",
+      "こんばんは": "こんばんは！",
+      "さようなら": "さようなら！また会いましょう！",
+      "札幌のおすすめは？":"すすきのです。",
+      "小樽のおすすめは？":"小樽運河です。",
+    };
+
+    send.addEventListener("click", () => {
+      const userText = input.value;
+      const botText = replies[userText] || "すみません、わかりません。";
+
+// チャットエリアにユーザーのテキストを追加
+      chat.innerHTML += `<p><img src="https://media.istockphoto.com/id/1313958250/ja/%E3%83%99%E3%82%AF%E3%82%BF%E3%83%BC/%E3%83%A6%E3%83%BC%E3%82%B6%E3%83%BC%E3%82%A2%E3%83%90%E3%82%BF%E3%83%BC%E3%83%97%E3%83%AD%E3%83%95%E3%82%A1%E3%82%A4%E3%83%AB%E3%82%A2%E3%82%A4%E3%82%B3%E3%83%B3%E9%80%8F%E6%98%8E%E3%81%AA%E8%83%8C%E6%99%AF%E3%81%AB%E9%BB%92%E3%81%84%E3%83%99%E3%82%AF%E3%83%88%E3%83%AB%E3%81%AE%E3%82%A4%E3%83%A9%E3%82%B9%E3%83%88web-%E3%82%B5%E3%82%A4%E3%83%88%E3%81%BE%E3%81%9F%E3%81%AF%E3%82%A2%E3%83%97%E3%83%AA-%E3%83%A1%E3%83%B3%E3%83%90%E3%83%BC%E3%81%AE-ui-%E3%83%9C%E3%82%BF%E3%83%B3.jpg?s=612x612&w=0&k=20&c=bajVig6UpeplN7IMRKvDf_wmwQXeaAnzxKGh25Xxt1M=" alt="あなた" width="30px" height="30px"></img> ${userText}</p>`;
+// チャットエリアにボットのテキストを追加
+      chat.innerHTML += `<p><img src="https://kotonohaworks.com/free-icons/wp-content/uploads/kkrn_icon_robot_1.png" alt="ロボット" width="30px" height="30px"></img> ${botText}</p>`;
+
+      input.value = ""; // 入力欄を空にする
+
+    });
+
+//事前の設定プログラム
+
+//document.getElementById('va').addEventListener ('click',function(){
+    $(document).ready(function() {
+    $(document).on('click', function() {
+    var fortunes = 
+    [ "完璧な一日が過ごせそう！更にプロテインで栄養を補うと吉",
+      "まあ良い日が過ごせそう！一応プロテインで栄養を補うと吉",
+      "基本的な一日は過ごせそう！プロテインで栄養をしっかり摂ると吉",
+      "微妙な一日となりそう。プロテインが鍵。一緒にBCAAも摂ると吉",
+      "かなり厳しい一日となりそう。プロテイン・BCAA・EAA・HMB・グルタミン・クレアチンは必須となる一日に",
+    ];
+
+    var randomIndex = Math.floor(Math.random() * fortunes.length);
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = fortunes[randomIndex];
+    });
+});
+
+document.getElementById('zn').addEventListener('click', function() {
+    var fortunes = 
+    [ "完璧な一日が過ごせそう！更にプロテインで栄養を補うと吉",
+      "まあ良い日が過ごせそう！一応プロテインで栄養を補うと吉",
+      "基本的な一日は過ごせそう！プロテインで栄養をしっかり摂ると吉",
+      "微妙な一日となりそう。プロテインが鍵。一緒にBCAAも摂ると吉",
+      "かなり厳しい一日となりそう。プロテイン・BCAA・EAA・HMB・グルタミン・クレアチンは必須となる一日に",
+    ];
+
+    var randomIndex = Math.floor(Math.random() * fortunes.length);
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = fortunes[randomIndex];
+});
+
+document.getElementById('fe').addEventListener('click', function() {
+    var fortunes = 
+    [ "完璧な一日が過ごせそう！更にプロテインで栄養を補うと吉",
+      "まあ良い日が過ごせそう！一応プロテインで栄養を補うと吉",
+      "基本的な一日は過ごせそう！プロテインで栄養をしっかり摂ると吉",
+      "微妙な一日となりそう。プロテインが鍵。一緒にBCAAも摂ると吉",
+      "かなり厳しい一日となりそう。プロテイン・BCAA・EAA・HMB・グルタミン・クレアチンは必須となる一日に",
+    ];
+
+    var randomIndex = Math.floor(Math.random() * fortunes.length);
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = fortunes[randomIndex];
+});
+
+document.getElementById('maka').addEventListener('click', function() {
+    var fortunes = 
+    [ "完璧な一日が過ごせそう！更にプロテインで栄養を補うと吉",
+      "まあ良い日が過ごせそう！一応プロテインで栄養を補うと吉",
+      "基本的な一日は過ごせそう！プロテインで栄養をしっかり摂ると吉",
+      "微妙な一日となりそう。プロテインが鍵。一緒にBCAAも摂ると吉",
+      "かなり厳しい一日となりそう。プロテイン・BCAA・EAA・HMB・グルタミン・クレアチンは必須となる一日に",
+    ];
+
+    var randomIndex = Math.floor(Math.random() * fortunes.length);
+    var resultElement = document.getElementById('result');
+    resultElement.textContent = fortunes[randomIndex];
+});
+
+</script>
+    
+</body>
+</html>

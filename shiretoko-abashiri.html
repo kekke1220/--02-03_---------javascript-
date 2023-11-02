@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css6/shiretoko-abashiri.css">
+</head>
+<body>
+    <div class="all">
+
+       <div class="shire">
+        <img src="https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0048/10048_3_l.jpg" alt="知床" width="1350px" height="500px">
+        <button class="shiretoko">知床</button>
+       </div>
+
+       <div class="aba">
+        <img src="https://tabi.furu-po.com/s3img/lovers/article/115/pub/20210325_180253_er2olg.jpeg" alt="網走" width="1350px" height="500px">
+        <button class="abashiri">網走</button>
+       </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+    $(".shiretoko").on("click",function(){
+    location.href="https://www.shiretoko.asia/"
+    });
+
+    $(".abashiri").on("click",function(){
+    location.href="https://visit-abashiri.jp/"
+    });
+
+
+    </script>
+    
+</body>
+</html>

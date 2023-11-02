@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="slot.css">
+</head>
+<body>
+
+    <div class="all">
+       <div class="head">
+        <img src="https://uub.jp/47/hokkaido/hokkaido_logo.png" alt="ヘッダー" width="600px" height="200px">
+        <img src="https://www.photolibrary.jp/mhd6/img390/450-20150416193225159626.jpg" alt="ロゴ" width="250px" height="250px">
+       </div>
+        
+
+        <div class="midashi">日本一、盛り上がる場所へ</div>
+        <p class="midashi1">北海道を盛り上げるために、</p>
+        <p class="midashi2">大盤振る舞いしちゃいます。</p>
+        <p class="midashi3">旅費の最大50%オフクーポン当たります。</p>
+        <p class="midashi4">"ココ"から新しい思い出を作ろう。</p>
+
+        <div class="chusen">
+            <img src="https://www.visit-hokkaido.jp/lsc/upfile/theme/0000/0002/2_105_l.jpg" alt="背景" width="1350px" height="500px">
+            
+           <div txt-all></div>
+            <p id="txt">スタート！を押してみよう！</p>
+            <p id="txt1">数字が3つ全て揃うと、旅行で使えるクーポンがもらえる！</p>
+           </div>
+
+            <p id="echo"></p>
+
+            <button id="stbtn">スタート！</button>
+
+        </div>
+
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+
+
+
+$("#stbtn").on("click",function(){
+
+  const r = Math.ceil(Math.random()*3);
+  const r2 = Math.ceil(Math.random()*3);
+  const r3 = Math.ceil(Math.random()*3);
+  $("#echo").html("【" + r + "】【" + r2 + "】【" + r3 + "】");
+
+  if(r == 1 && r2 == 1 && r3 ==1){
+    setTimeout(function(){
+    window.location.href = "http://127.0.0.1:5500/coupon1.html";
+    } ,3*1000);
+  }else if(r == 2 && r2 == 2 && r3 ==2){
+    setTimeout(function(){
+    window.location.href = "http://127.0.0.1:5500/coupon2.html";
+    } ,3*1000);
+  }else if(r == 3 && r2 == 3 && r3 == 3){
+    setTimeout(function(){
+    window.location.href = "http://127.0.0.1:5500/coupon3.html";
+    } ,3*1000);
+  }else{
+    setTimeout(function(){
+    window.location.href = "http://127.0.0.1:5500/zannen.html";
+    } ,3*1000);
+  }
+
+});
+
+    </script>
+    
+</body>
+</html>

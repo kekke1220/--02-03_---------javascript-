@@ -1,0 +1,56 @@
+.all {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.satsu {
+    position: relative;
+    display: block;
+}
+
+.satsu img {
+    width: 100%;
+    display: block;
+}
+
+.sapporo {
+    position: absolute;
+    width: 1350px;
+    bottom: 1px;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgba(105, 230, 255, 0.5);
+    padding: 12.8%;
+    text-align: left;
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bolder;
+    color: red;
+    font-family: YuMincho;
+}
+
+.ota {
+    position: relative;
+    display: block;
+}
+
+.ota img {
+    width: 100%;
+    display: block;
+}
+
+.otaru {
+    position: absolute;
+    width: 1350px;
+    bottom: 1px;
+    display: block;
+    box-sizing: border-box;
+    background-color: rgba(105, 230, 255, 0.5);
+    padding: 12.8%;
+    text-align: left;
+    color: #FFF;
+    font-size: 100px;
+    font-weight: bolder;
+    color: red;
+    font-family: YuMincho;
+}
